@@ -19,9 +19,9 @@ public class StackArrayList<DataType>implements Stack<DataType> {
 			arr2[i]=arr[i];
 		}
 		arr=arr2;
-		buffer=buffer*2;
+		buffer=buffer*2;   // when size full then double the size;
 		}
-	public void Push(DataType value) {
+	public void Push(DataType value) {     // adding element
 		if (top==buffer-1) {
 			checkIndex();
 		}
@@ -30,7 +30,7 @@ public class StackArrayList<DataType>implements Stack<DataType> {
 	}
 	public DataType peek() {
 		if(top==-1) {
-			BoundException obj=new BoundException();
+			BoundException obj=new BoundException();  //exception handle
 			obj.PrintError();	
 			return null;
 		}
