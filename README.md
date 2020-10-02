@@ -6,3 +6,5 @@
   
   In ArrayList  we can't store dynamically but incase of LinkedList we can grow dynamically.
 
+
+It is LIFO(Last in First Out).
